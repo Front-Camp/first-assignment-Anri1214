@@ -9,6 +9,7 @@
  */
 const isObject = data => {
   /* your logic here...*/
+    return Object.prototype.toString.call(data).includes('Object');
 };
 
 export default isObject;

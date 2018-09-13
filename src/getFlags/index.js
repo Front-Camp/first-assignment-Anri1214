@@ -7,6 +7,9 @@
  */
 const getFlags = arr => {
   /* your logic here...*/
+  let res = [];
+  arr.forEach(val => res.push(val.flags));
+  return [].concat.apply([],res);
 };
 
 export default getFlags;

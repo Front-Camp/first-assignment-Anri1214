@@ -11,6 +11,13 @@
 */
 const sum = (a, b) => {
   /* your logic here...*/
+  try {
+      if (Number.isInteger(a) && Number.isInteger(b)) {
+          return a + b;
+      }
+
+      throw new Error();
+    } catch (e) {}
 };
 
 export default sum;

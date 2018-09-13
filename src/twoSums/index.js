@@ -10,6 +10,9 @@
  */
 const twoSums = (arr, base) => {
   /* your logic here...*/
+  arr.forEach(val => {
+      val;
+  });
 };
 
 export default twoSums;
