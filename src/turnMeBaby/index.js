@@ -9,11 +9,11 @@
  */
 const turnMeBaby = str => {
   /* your logic here...*/
-  if (typeof str !== 'string') {
-      throw new Error();
+  if (typeof str === 'string') {
+      return str ? str.split('').reverse().join('') : str;
   }
 
-  return str ? str.split('').reverse().join('') : str;
+  throw new Error();
 };
 
 export default turnMeBaby;

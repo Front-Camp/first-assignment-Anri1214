@@ -10,9 +10,14 @@
  */
 const twoSums = (arr, base) => {
   /* your logic here...*/
-  arr.forEach(val => {
-      val;
-  });
+  console.log(arr, base);
+    let map = {};
+    let res = [];
+    for (let i = 0; i < arr.length; i++) {
+        map[arr[i]] !== undefined ? res.push([map[arr[i]], arr[i]]) : map[base - arr[i]] = arr[i];
+    }
+    
+    return res[0];
 };
 
 export default twoSums;
