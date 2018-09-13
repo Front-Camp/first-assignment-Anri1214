@@ -12,7 +12,13 @@
  */
 const sumElements = arr => {
   /* your logic here...*/
-  return arr.filter(val => isFinite(val)).reduce((a, b) => parseFloat(a) + parseFloat(b), 0);
+    let map = arr.map(val => {
+        if (isFinite(val) || parseInt(val, 10)) {
+            return parseFloat(val) || parseInt(val, 10) || parseInt(val, 16);
+        }
+    });
+    
+    return map.filter(val => val !== undefined).reduce((a, b) => a + b, 0);
 };
 
 export default sumElements;

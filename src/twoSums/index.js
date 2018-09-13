@@ -10,7 +10,6 @@
  */
 const twoSums = (arr, base) => {
   /* your logic here...*/
-  console.log(arr, base);
     let map = {};
     let res = [];
     for (let i = 0; i < arr.length; i++) {
