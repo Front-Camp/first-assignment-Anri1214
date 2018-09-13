@@ -13,7 +13,7 @@ const turnMeBaby = str => {
       return str ? str.split('').reverse().join('') : str;
   }
 
-  throw new Error();
+  return Error('this is not a string');
 };
 
 export default turnMeBaby;
